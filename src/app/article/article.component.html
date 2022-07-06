@@ -104,15 +104,14 @@
               <div class="card-footer">
                 <img [src]="currentUser.image" class="comment-author-img" />
                 <button class="btn btn-sm btn-primary" type="submit">
-                 Post Comment
-                </button>
+                 Post Comment                </button>
               </div>
             </fieldset>
           </form>
         </div>
 
         <div *appShowAuthed="false">
-          <a [routerLink]="['/login']">Sign in</a> or <a [routerLink]="['/register']">sign up</a> to add comments on this article.
+          <a [routerLink]="['/login']">Sign in!</a> or <a [routerLink]="['/register']">sign up</a> to add comments on this article.
         </div>
 
         <app-article-comment
